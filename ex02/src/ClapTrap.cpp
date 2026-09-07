@@ -6,13 +6,13 @@
 /*   By: cycolonn <cycolonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 21:08:40 by cycolonn          #+#    #+#             */
-/*   Updated: 2026/09/07 17:42:37 by cycolonn         ###   ########.fr       */
+/*   Updated: 2026/09/07 17:33:24 by cycolonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : _name("Default") , _hitPoints(10) , _energyPoints(10) , _attackDamage(0)
+ClapTrap::ClapTrap()
 {
     std::cout << PURPLE <<"Default constructor called" << RESET << std::endl;
 }

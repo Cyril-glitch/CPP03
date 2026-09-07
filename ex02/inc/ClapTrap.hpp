@@ -6,7 +6,7 @@
 /*   By: cycolonn <cycolonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 20:58:29 by cycolonn          #+#    #+#             */
-/*   Updated: 2026/09/07 19:01:57 by cycolonn         ###   ########.fr       */
+/*   Updated: 2026/09/07 19:01:38 by cycolonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class ClapTrap
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
     
-    private :
+    protected :
 
         std::string _name;
         int _hitPoints;

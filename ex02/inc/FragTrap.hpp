@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cycolonn <cycolonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/07 14:48:04 by cycolonn          #+#    #+#             */
-/*   Updated: 2026/09/07 15:07:37 by cycolonn         ###   ########.fr       */
+/*   Created: 2026/09/07 15:37:13 by cycolonn          #+#    #+#             */
+/*   Updated: 2026/09/07 18:43:38 by cycolonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/ClapTrap.hpp"
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
 
-int main()
+# include "ClapTrap.hpp" 
+
+class FragTrap : public ClapTrap 
 {
-    ClapTrap cp1("cp1");
-        cp1.attack("cp2");
-        cp1.takeDamage(5);
-        cp1.beRepaired(5); 
-        cp1.attack("cp2");
-        cp1.takeDamage(10);
-        cp1.attack("cp2");
-        cp1.beRepaired(5);
-}
+    public :
+
+        FragTrap(void);
+        FragTrap(const std::string name);
+        FragTrap(FragTrap const & src);
+        ~FragTrap(void);
+        FragTrap& operator=(FragTrap const & rhs);
+
+        void highFivesGuys(void);
+};
+
+#endif

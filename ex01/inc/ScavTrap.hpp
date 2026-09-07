@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cycolonn <cycolonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/07 14:48:04 by cycolonn          #+#    #+#             */
-/*   Updated: 2026/09/07 15:07:37 by cycolonn         ###   ########.fr       */
+/*   Created: 2026/09/07 15:37:13 by cycolonn          #+#    #+#             */
+/*   Updated: 2026/09/07 18:16:02 by cycolonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/ClapTrap.hpp"
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
 
-int main()
+# include "ClapTrap.hpp" 
+
+class ScavTrap : public ClapTrap 
 {
-    ClapTrap cp1("cp1");
-        cp1.attack("cp2");
-        cp1.takeDamage(5);
-        cp1.beRepaired(5); 
-        cp1.attack("cp2");
-        cp1.takeDamage(10);
-        cp1.attack("cp2");
-        cp1.beRepaired(5);
-}
+    public :
+
+        ScavTrap(void);
+        ScavTrap(const std::string name);
+        ScavTrap(ScavTrap const & src);
+        ~ScavTrap(void);
+        ScavTrap& operator=(ScavTrap const & rhs);
+
+        void attack(const std::string& target);
+
+        void    guardGate(); 
+};
+
+#endif
