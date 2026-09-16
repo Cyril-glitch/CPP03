@@ -1,4 +1,4 @@
-NAME = bin/serana
+NAME = bin/serena
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -27,10 +27,10 @@ $(OBJ_DIR)/%.o : %.cpp
 .PHONY: all clean fclean re
 
 it :	all
-	./bin/serana
+	./bin/serena
 
 val:	all
-	valgrind --leak-check=full --show-leak-kinds=all ./bin/serana
+	valgrind --leak-check=full --show-leak-kinds=all ./bin/serena
 
 clean :
 	rm -rf $(OBJ_DIR)
