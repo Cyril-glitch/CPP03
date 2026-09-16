@@ -32,7 +32,7 @@ Each exercise produces its own binary under the `bin/` directory:
 
 ```bash
 cd ex00 && ./bin/intro
-cd ex01 && ./bin/serenna
+cd ex01 && ./bin/serena
 cd ex02 && ./bin/frag
 ```
 
