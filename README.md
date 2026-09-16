@@ -31,9 +31,9 @@ Navigate to any exercise directory (`ex00`, `ex01`, or `ex02`) and use the stand
 Each exercise produces its own binary under the `bin/` directory:
 
 ```bash
-cd ex00 && ./bin/claptrap
-cd ex01 && ./bin/scavtrap
-cd ex02 && ./bin/fragtrap
+cd ex00 && ./bin/intro
+cd ex01 && ./bin/serenna
+cd ex02 && ./bin/frag
 ```
 
 ### Useful commands
